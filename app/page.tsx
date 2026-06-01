@@ -1,9 +1,14 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-10">
-        <header className="space-y-2">
+        <header className="space-y-2 flex justify-between items-center">
           <h1 className="text-3xl font-semibold tracking-tight">Medallo.dev</h1>
+          <Link href="/coffee" className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+            Ver Tabla de Café
+          </Link>
         </header>
 
         <section className="grid gap-6 lg:grid-cols-2">
